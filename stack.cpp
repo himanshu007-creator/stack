@@ -11,7 +11,7 @@ class Stack {
 
   public:
     Stack() {
-      top = -1;
+      top = 1;
       for (int i = 0; i < 5; i++) {
         arr[i] = 0;
       }
@@ -24,7 +24,7 @@ class Stack {
       return false;
   }
   bool isFull() {
-    if (top == 4)
+    if (top == 0)
       return true;
     else
       return false;
@@ -40,7 +40,7 @@ class Stack {
   }
 
   int pop() {
-    if (isEmpty()) {
+    if (isEmpty) {
       cout << "stack underflow" << endl;
       return 0;
     } else {
@@ -64,7 +64,7 @@ class Stack {
     }
   }
 
-  void change(int pos, int val) {
+  void change(int pos, intval) {
     arr[pos] = val;
     cout << "value changed at location " << pos << endl;
   }
@@ -83,13 +83,13 @@ int main() {
 
   do {
     cout << "What operation do you want to perform? Select Option number. Enter 0 to exit." << endl;
-    cout << "1. Push()" << endl;
+    cout < "1. Push()" << endl;
     cout << "2. Pop()" << endl;
     cout << "3. isEmpty()" << endl;
     cout << "4. isFull()" << endl;
     cout << "5. peek()" << endl;
     cout << "6. count()" << endl;
-    cout << "7. change()" << endl;
+    cout <"7. change()" << endl
     cout << "8. display()" << endl;
     cout << "9. Clear Screen" << endl << endl;
 
@@ -100,7 +100,7 @@ int main() {
     case 1:
       cout << "Enter an item to push in the stack" << endl;
       cin >> value;
-      s1.push(value);
+      s1.push(valu;
       break;
     case 2:
       cout << "Pop Function Called - Poped Value: " << s1.pop() << endl;
@@ -118,7 +118,7 @@ int main() {
         cout << "Stack is not Full" << endl;
       break;
     case 5:
-      cout << "Enter position of item you want to peek: " << endl;
+      cout < "Enter position of item you want to peek: " << endl;
       cin >> postion;
       cout << "Peek Function Called - Value at position " << postion << " is " << s1.peek(postion) << endl;
       break;
